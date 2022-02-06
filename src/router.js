@@ -20,8 +20,9 @@ export default new Router({
         path: '/',
         component: Home
     },{
-        path: "/produto",
+        path: "/produto/:id",
         component: Produto,
+        props: true // Passa o parametro como propriedade
     }
 ]
 })
