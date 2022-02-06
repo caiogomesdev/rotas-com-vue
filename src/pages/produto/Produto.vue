@@ -1,13 +1,12 @@
 <template>
-  <div id="app">
-    <h1>Rotas</h1>
-    <router-view />
+  <div id="produto">
+<h1>Tela produto</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "app"
+  name: "produto"
 }
 </script>
 
