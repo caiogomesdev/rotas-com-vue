@@ -2,7 +2,7 @@
   <nav id="Header">
       <h1>Caio Gomes Dev</h1>
       <ul>
-          <li><router-link to="/" active-class="ativo" exact>Home</router-link></li>
+          <li><router-link :to="{ name: 'home'}" active-class="ativo" exact>Home</router-link></li>
           <li><router-link to="/produto" active-class="ativo">Produto</router-link></li>
       </ul>
   </nav>

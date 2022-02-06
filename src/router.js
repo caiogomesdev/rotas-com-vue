@@ -19,6 +19,7 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [{
+        name: 'home',
         path: '/',
         component: Home
     },{
@@ -26,9 +27,12 @@ export default new Router({
         component: Produto,
         props: true, // Passa o parametro como propriedade
         children: [
-            {path: '', component: MeusProdutos},
+            {path: '/', component: MeusProdutos},
             {path: ':id', component: DetalheProduto, props: true}
-        ]
-    }
-]
+        ]},
+        {
+            path: '*',
+            redirect: '/'
+        }
+    ],
 })
