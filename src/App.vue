@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <h1>Rotas</h1>
+    <Header />
+    <hr />
     <router-view />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue"
 export default {
-  name: "app"
+  name: "app",
+  components:{ Header}
 }
 </script>
 
